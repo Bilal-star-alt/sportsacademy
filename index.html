@@ -53,7 +53,29 @@
       <section id="contact" class="section callout">
         <p class="eyebrow">Ready to get started?</p>
         <h2>Join the next generation of athletes.</h2>
-        <a class="button button--light" href="mailto:hello@sportsacademy.example">Contact the Academy</a>
+        <form class="contact-form" id="contact-form">
+          <div class="form-grid">
+            <label>Full name<input name="name" type="text" autocomplete="name" placeholder="Your name" required /></label>
+            <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label>
+            <label>Mobile number<input name="mobile" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required /></label>
+          </div>
+          <fieldset>
+            <legend>Which sports are you interested in?</legend>
+            <div class="sport-options">
+              <label><input name="sports" type="checkbox" value="Soccer" /> Soccer</label>
+              <label><input name="sports" type="checkbox" value="Basketball" /> Basketball</label>
+              <label><input name="sports" type="checkbox" value="Cricket" /> Cricket</label>
+              <label><input name="sports" type="checkbox" value="Tennis" /> Tennis</label>
+              <label><input name="sports" type="checkbox" value="Volleyball" /> Volleyball</label>
+              <label><input name="sports" type="checkbox" value="Swimming" /> Swimming</label>
+              <label><input name="sports" type="checkbox" value="Athletics" /> Athletics</label>
+              <label><input name="sports" type="checkbox" value="Baseball" /> Baseball</label>
+            </div>
+          </fieldset>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell us about your goals or any questions you have."></textarea></label>
+          <button class="button button--light" type="submit">Send enquiry</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
