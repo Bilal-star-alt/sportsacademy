@@ -1,0 +1,231 @@
+Tags: age, child, beginner, sport, eight, 8
+Q: Which sport suits an 8-year-old?
+A: Soccer, swimming, tennis, basketball, athletics, and gymnastics can all be great choices at age 8. Let your child try a few and choose the activity they enjoy and want to continue.
+
+Tags: equipment, gear, bring, first session
+Q: What equipment is needed for the first session?
+A: Bring comfortable sportswear, suitable trainers, and a water bottle. Your coach will confirm any sport-specific items before the first session.
+
+Tags: timings, time, schedule, hours, open
+Q: What are the academy timings?
+A: {{timings}}
+
+Tags: fee, fees, cost, price, payment
+Q: What is the fee?
+A: {{fees}}
+
+Tags: register, registration, enrol, enroll, join, sign up
+Q: How can I register?
+A: {{registration}}
+
+Tags: trial, taster, try
+Q: Can my child attend a trial session?
+A: Trial-session availability depends on the program and current capacity. Send an enquiry and our team will confirm the next available option.
+
+Tags: age, minimum age, youngest
+Q: What is the minimum age to join?
+A: Age groups can vary by sport and program. Contact the academy with your child’s age and preferred sport for the most suitable group.
+
+Tags: age group, group, class
+Q: How are children grouped?
+A: Children are normally grouped by age, experience, and training needs so every athlete can learn safely and confidently.
+
+Tags: beginner, no experience, new
+Q: Can beginners join?
+A: Yes. Beginner-friendly sessions focus on fundamentals, confidence, safety, and enjoying the sport before introducing more advanced skills.
+
+Tags: advanced, experienced, competitive
+Q: Do you have advanced training?
+A: Advanced athletes can work on technique, fitness, decision-making, and competition preparation. Ask our team about the right performance group.
+
+Tags: soccer, football
+Q: Do you offer soccer training?
+A: Soccer sessions can develop ball control, passing, movement, teamwork, and match awareness. Ask about the appropriate age group and level.
+
+Tags: basketball
+Q: Do you offer basketball training?
+A: Basketball training can cover dribbling, passing, shooting, defense, coordination, and team play in an encouraging environment.
+
+Tags: cricket
+Q: Do you offer cricket training?
+A: Cricket training can include batting, bowling, fielding, fitness, and game awareness. Coaches will advise on any required protective equipment.
+
+Tags: tennis
+Q: Is tennis available?
+A: Tennis is a great option for coordination, agility, focus, and individual confidence. Check with the academy for current session availability.
+
+Tags: swimming, swim
+Q: Is swimming available?
+A: Swimming helps build confidence, fitness, water awareness, and full-body coordination. Please ask about the current swimming program and requirements.
+
+Tags: athletics, running, track
+Q: What does athletics training include?
+A: Athletics can include running, jumping, throwing, agility, balance, and general movement skills adapted for each age group.
+
+Tags: girls, girl
+Q: Are programs available for girls?
+A: Yes. Sports Academy welcomes girls and boys and aims to provide supportive, inclusive training environments for every athlete.
+
+Tags: boys, boy
+Q: Are programs available for boys?
+A: Yes. Sports Academy welcomes boys and girls and aims to provide supportive, inclusive training environments for every athlete.
+
+Tags: girls, boys, mixed, inclusive
+Q: Are sessions mixed or separate?
+A: Session arrangements vary by program, age group, and capacity. Our team can explain the current format for your chosen sport.
+
+Tags: coach, coaching, qualified
+Q: Who are the coaches?
+A: Coaches should be experienced in their sport and focused on safe, positive player development. Ask the academy for coach profiles and current program details.
+
+Tags: safety, safe, safeguarding
+Q: How do you keep children safe?
+A: Safety comes first: appropriate supervision, age-suitable activities, warm-ups, clear behaviour expectations, and a prompt response to injuries or concerns.
+
+Tags: injury, injured, hurt, first aid
+Q: What happens if a child is injured?
+A: Tell a coach immediately. Training should stop when needed, first aid procedures should be followed, and parents or guardians should be informed.
+
+Tags: medical, allergy, health, condition
+Q: Can my child join with a medical condition or allergy?
+A: Please tell the academy about relevant medical needs, allergies, medication, or accommodations before the first session so the team can plan appropriately.
+
+Tags: fitness, fit, exercise
+Q: Does my child need to be fit before joining?
+A: No. Sessions can help children build fitness gradually. Coaches should adapt activities to suit each athlete’s current level.
+
+Tags: uniform, kit, clothing
+Q: Is a uniform required?
+A: Comfortable activewear is a good start. If a program has a specific uniform or kit requirement, the academy will share the details before you join.
+
+Tags: shoes, trainers, footwear
+Q: What shoes should we wear?
+A: Wear clean, comfortable footwear suitable for the sport and venue. For example, indoor court shoes, trainers, or soccer boots may be appropriate depending on the session.
+
+Tags: water, bottle, drink
+Q: Should I bring water?
+A: Yes. Please bring a labelled water bottle to every session and encourage regular hydration, especially in warm weather.
+
+Tags: parent, watch, stay
+Q: Can parents watch the session?
+A: Parent viewing arrangements can vary by activity and venue. Ask the academy about its current policy for your child’s program.
+
+Tags: attendance, miss, absent, absence
+Q: What if we miss a session?
+A: Let the academy know as early as possible. Make-up session policies vary, so ask the team about options for your program.
+
+Tags: cancellation, cancel, refund
+Q: What is the cancellation or refund policy?
+A: Cancellation and refund terms depend on the program. Please request the academy’s current written policy before completing registration.
+
+Tags: weather, rain, hot
+Q: What happens if the weather is bad?
+A: Outdoor sessions may move indoors, be rescheduled, or be adjusted for safety. The academy should notify families of any change.
+
+Tags: indoor, outdoor, venue, location
+Q: Where are sessions held?
+A: Session venues can vary by sport. Contact the academy for the confirmed location, arrival instructions, and parking information.
+
+Tags: parking, car, drop off, pickup
+Q: Is there parking or a drop-off area?
+A: Please ask the academy for current parking, drop-off, and pick-up guidance for your selected venue.
+
+Tags: arrival, arrive, early
+Q: How early should we arrive?
+A: Aim to arrive around 10 to 15 minutes early for check-in, changing, and a relaxed start to the session.
+
+Tags: duration, long, length
+Q: How long is a training session?
+A: Session length depends on the athlete’s age and program. The academy can confirm the current timetable for your chosen sport.
+
+Tags: frequency, often, week
+Q: How often should my child train?
+A: For many beginners, one or two enjoyable sessions a week is a strong start. Rest, school, family time, and the child’s enthusiasm all matter.
+
+Tags: competition, tournament, match
+Q: Do athletes compete in matches or tournaments?
+A: Competition opportunities depend on the program and readiness of the group. Development and enjoyment should come before competitive pressure.
+
+Tags: assessment, level, evaluation
+Q: Will my child be assessed?
+A: Coaches may use simple observations to place athletes in an appropriate group and identify skills to build. It should feel supportive, not stressful.
+
+Tags: progress, improve, development
+Q: How will I know if my child is progressing?
+A: Progress can show through stronger fundamentals, confidence, focus, teamwork, fitness, and enjoyment—not only scores or wins.
+
+Tags: shy, confidence, nervous
+Q: My child is shy or nervous. Can they join?
+A: Absolutely. Encourage them to attend a trial, arrive early, and let the coach know. A positive first experience can build confidence over time.
+
+Tags: friends, friend, together
+Q: Can siblings or friends join together?
+A: Friends and siblings may be able to join the same session when their ages and levels fit the group. Ask the academy about availability.
+
+Tags: special needs, disability, accessibility, inclusive
+Q: Can you support children with additional needs?
+A: Share your child’s needs with the academy before joining. The team can discuss reasonable accommodations, safety, and the most suitable session.
+
+Tags: nutrition, food, snack, diet
+Q: Do you provide nutrition advice?
+A: For young athletes, focus on balanced meals, regular hydration, and enough sleep. Speak with a qualified healthcare or nutrition professional for individual advice.
+
+Tags: warm up, warmup, stretch
+Q: Why are warm-ups important?
+A: Warm-ups prepare the body and mind for activity, improve movement quality, and help reduce the risk of injury.
+
+Tags: strength, gym, weights
+Q: Does training include strength work?
+A: Age-appropriate strength work often uses bodyweight, balance, coordination, and good movement patterns. Coaches should keep it safe and suitable for each athlete.
+
+Tags: screen, phone, device
+Q: Can athletes use phones during training?
+A: Phones are usually best kept away during training so athletes can focus, stay safe, and connect with their teammates and coaches.
+
+Tags: behaviour, conduct, rules
+Q: What behaviour is expected?
+A: Athletes should show respect, listen to coaches, support teammates, play fairly, and help create a safe environment for everyone.
+
+Tags: bullying, concern, complaint
+Q: Who do I speak to about a concern?
+A: Speak with the coach or academy contact as soon as possible. Share the details clearly so the concern can be handled appropriately and respectfully.
+
+Tags: contact, email, phone, reach
+Q: How can I contact the academy?
+A: You can use the enquiry form on this website or email {{contact}}.
+
+Tags: holiday, camp, summer
+Q: Do you run holiday camps?
+A: Holiday camps may be offered at different times of year. Contact the academy to learn about upcoming dates, sports, and age groups.
+
+Tags: birthday, party
+Q: Do you offer sports birthday parties?
+A: Sports parties may be available depending on staff and venue capacity. Send an enquiry with the child’s age, preferred sport, date, and expected number of guests.
+
+Tags: private, one to one, individual
+Q: Are private coaching sessions available?
+A: Private or small-group coaching may be available for skill development and personal goals. Ask the academy about coach availability and pricing.
+
+Tags: volunteer, volunteer opportunities
+Q: Can I volunteer with the academy?
+A: Volunteer opportunities depend on current needs and safeguarding requirements. Contact the academy to ask about suitable roles.
+
+Tags: job, jobs, work, career
+Q: Are there coaching jobs available?
+A: For coaching or academy roles, please contact the academy with a short introduction, your qualifications, and relevant experience.
+
+Tags: language, english, translation
+Q: Can you support families who speak another language?
+A: Tell the academy what language support would help. The team can explain available options and make communication as clear as possible.
+
+Tags: covid, illness, sick, unwell
+Q: What if my child is unwell?
+A: Please keep children home when they are unwell and let the academy know. Return to training only when they are ready to participate safely.
+
+Tags: lost, property, belongings
+Q: What happens to lost property?
+A: Label all clothing and equipment. Ask the academy’s staff about lost-property arrangements after the session.
+
+Tags: other, question, help
+Q: I have another question.
+A: We are happy to help. Use the enquiry form with your question and the team will get back to you.
