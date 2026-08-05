@@ -57,9 +57,45 @@ const coachForm = document.querySelector('#coach-form');
 const coachQuestion = document.querySelector('#coach-question');
 const chatMessages = document.querySelector('#chat-messages');
 const config = window.academyConfig || {};
+let academyKnowledge = [];
+
+function parseKnowledge(text) {
+  return text.trim().split(/\n\s*\n/).map((entry) => {
+    const tags = entry.match(/^Tags:\s*(.*)$/m)?.[1].toLowerCase().split(',').map((tag) => tag.trim()) || [];
+    const question = entry.match(/^Q:\s*(.*)$/m)?.[1] || '';
+    const answer = entry.match(/^A:\s*(.*)$/m)?.[1] || '';
+    return { tags, question, answer };
+  }).filter((entry) => entry.question && entry.answer);
+}
+
+function fillAcademyDetails(answer) {
+  return answer
+    .replace('{{timings}}', config.timings || 'Please contact the academy for current timings.')
+    .replace('{{fees}}', config.fees || 'Please contact the academy for current fees.')
+    .replace('{{registration}}', config.registration || 'Please contact the academy to register.')
+    .replace('{{contact}}', config.contact || 'the academy');
+}
+
+async function loadAcademyKnowledge() {
+  try {
+    const knowledgeUrl = new URL('assets/data/academy-knowledge.txt', window.location.href);
+    const response = await fetch(knowledgeUrl);
+    if (!response.ok) throw new Error('Knowledge base unavailable');
+    academyKnowledge = parseKnowledge(await response.text());
+  } catch {
+    academyKnowledge = [];
+  }
+}
+
+const academyKnowledgeReady = loadAcademyKnowledge();
 
 function coachReply(question) {
   const normalized = question.toLowerCase();
+  const matchingEntry = academyKnowledge.map((entry) => ({
+    ...entry,
+    score: (normalized.includes(entry.question.toLowerCase()) ? 1000 : 0) + entry.tags.reduce((score, tag) => score + (normalized.includes(tag) ? tag.length : 0), 0),
+  })).sort((first, second) => second.score - first.score)[0];
+  if (matchingEntry?.score > 0) return fillAcademyDetails(matchingEntry.answer);
   if (/(8.year|eight.year|child|kid|young)/.test(normalized) && /(sport|suit|recommend)/.test(normalized)) {
     return 'For an 8-year-old, try a few sports before choosing one. Soccer, basketball, swimming, tennis, and athletics are great for building coordination, confidence, and teamwork. The best fit is the sport they enjoy and want to return to.';
   }
@@ -82,10 +118,17 @@ function addChatMessage(text, sender) {
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
-function askCoach(question) {
+async function askCoach(question) {
   const cleanedQuestion = question.trim();
   if (!cleanedQuestion) return;
   addChatMessage(cleanedQuestion, 'user');
+  const loadingMessage = document.createElement('article');
+  loadingMessage.className = 'chat-message chat-message--assistant chat-message--loading';
+  loadingMessage.innerHTML = '<strong>AI Coach</strong><p>Finding the best answer…</p>';
+  chatMessages.append(loadingMessage);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+  await academyKnowledgeReady;
+  loadingMessage.remove();
   addChatMessage(coachReply(cleanedQuestion), 'assistant');
 }
 
