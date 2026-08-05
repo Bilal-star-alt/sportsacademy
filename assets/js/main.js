@@ -52,3 +52,64 @@ contactForm?.addEventListener('submit', async (event) => {
     submitButton.disabled = false;
   }
 });
+
+const coachForm = document.querySelector('#coach-form');
+const coachQuestion = document.querySelector('#coach-question');
+const chatMessages = document.querySelector('#chat-messages');
+const config = window.academyConfig || {};
+
+function coachReply(question) {
+  const normalized = question.toLowerCase();
+  if (/(8.year|eight.year|child|kid|young)/.test(normalized) && /(sport|suit|recommend)/.test(normalized)) {
+    return 'For an 8-year-old, try a few sports before choosing one. Soccer, basketball, swimming, tennis, and athletics are great for building coordination, confidence, and teamwork. The best fit is the sport they enjoy and want to return to.';
+  }
+  if (/(equipment|gear|need|bring)/.test(normalized)) {
+    return 'Start with comfortable sportswear, a water bottle, and trainers suited to the activity. Your coach can confirm any sport-specific equipment, such as a soccer ball, cricket bat, or swimwear, before the first session.';
+  }
+  if (/(timing|time|schedule|open|hour)/.test(normalized)) return config.timings;
+  if (/(fee|cost|price|payment|how much)/.test(normalized)) return config.fees;
+  if (/(register|registration|sign.?up|join|enrol|enroll)/.test(normalized)) return config.registration;
+  return `I can help with sports for children, equipment, timings, fees, and registration. For a specific question, please contact us at ${config.contact || 'the academy'}.`;
+}
+
+function addChatMessage(text, sender) {
+  const message = document.createElement('article');
+  message.className = `chat-message chat-message--${sender}`;
+  const name = sender === 'assistant' ? 'AI Coach' : 'You';
+  message.innerHTML = `<strong>${name}</strong><p></p>`;
+  message.querySelector('p').textContent = text;
+  chatMessages.append(message);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function askCoach(question) {
+  const cleanedQuestion = question.trim();
+  if (!cleanedQuestion) return;
+  addChatMessage(cleanedQuestion, 'user');
+  addChatMessage(coachReply(cleanedQuestion), 'assistant');
+}
+
+coachForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  askCoach(coachQuestion.value);
+  coachQuestion.value = '';
+  coachQuestion.focus();
+});
+
+document.querySelectorAll('.quick-questions button').forEach((button) => {
+  button.addEventListener('click', () => askCoach(button.textContent));
+});
+
+const coachLauncher = document.querySelector('#coach-launcher');
+const coachAssistant = document.querySelector('#coach-assistant');
+const coachClose = document.querySelector('#coach-close');
+
+function setCoachOpen(isOpen) {
+  coachAssistant.classList.toggle('is-open', isOpen);
+  coachAssistant.setAttribute('aria-hidden', String(!isOpen));
+  coachLauncher.setAttribute('aria-expanded', String(isOpen));
+  if (isOpen) coachQuestion.focus();
+}
+
+coachLauncher?.addEventListener('click', () => setCoachOpen(true));
+coachClose?.addEventListener('click', () => setCoachOpen(false));
