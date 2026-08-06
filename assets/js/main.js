@@ -156,3 +156,18 @@ function setCoachOpen(isOpen) {
 
 coachLauncher?.addEventListener('click', () => setCoachOpen(true));
 coachClose?.addEventListener('click', () => setCoachOpen(false));
+
+const journeyMessages = {
+  student: '<strong>You do not have to have it all figured out.</strong> Explore new sports, build everyday confidence, and find the activity that makes you feel energised and proud.',
+  athlete: '<strong>Your potential deserves a plan.</strong> Build skills, learn from trusted guidance, and keep moving toward the opportunities that match your ambitions.',
+  parent: '<strong>Your encouragement changes everything.</strong> We are here to make choices clearer and help you find meaningful opportunities for your child to grow through sport.',
+};
+
+const journeyMessage = document.querySelector('#journey-message');
+document.querySelectorAll('[data-journey]').forEach((button) => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('[data-journey]').forEach((choice) => choice.classList.remove('is-selected'));
+    button.classList.add('is-selected');
+    journeyMessage.innerHTML = `<p>${journeyMessages[button.dataset.journey]}</p>`;
+  });
+});
