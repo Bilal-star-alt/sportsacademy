@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Bilal Tily's vision for Sports Academy." />
+    <title>About Us | Sports Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Sports Academy home">SPORTS<span>ACADEMY</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+      <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+        <a href="index.html#programs">Programs</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="index.html#contact" class="button button--small">Join Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-hero">
+        <div>
+          <p class="eyebrow">About Sports Academy</p>
+          <h1>Every dream deserves <em>its chance.</em></h1>
+          <p>We help young athletes find the confidence, guidance, and opportunities to move from a passion for sport to real progress.</p>
+          <a class="button" href="index.html#contact">Start Your Journey</a>
+        </div>
+      </section>
+
+      <section class="section founder-story">
+        <div class="founder-photo"><img src="assets/Billy.png" alt="Bilal Tily, founder of Sports Academy" /></div>
+        <div>
+          <p class="eyebrow">Meet the founder</p>
+          <h2>Hi, I’m Bilal Tily.</h2>
+          <p>I created Sports Academy with one simple belief: every student deserves the chance to discover, develop, and pursue their athletic potential—regardless of where they begin.</p>
+          <p>For many young athletes, finding the right opportunities can feel confusing. From choosing a program and building skills to connecting with coaches, talented students can miss out simply because they do not have clear guidance or the right resources.</p>
+          <p>Sports Academy is here to make that path more accessible, organized, and inspiring—one meaningful step at a time.</p>
+        </div>
+      </section>
+
+      <section class="section section--dark vision-section">
+        <p class="eyebrow">Our vision</p>
+        <blockquote>“To open more doors for every young athlete—so passion can become progress, and progress can become possibility.”</blockquote>
+        <p>We believe sport is more than winning games. It builds discipline, leadership, teamwork, resilience, and lifelong friendships. Every practice and every challenge helps shape who you become.</p>
+      </section>
+
+      <section class="section journey-section">
+        <div class="section-heading">
+          <p class="eyebrow">Made for your journey</p>
+          <h2>Where do you see yourself?</h2>
+          <p>Choose the path that feels most like you. Your journey can start exactly where you are today.</p>
+        </div>
+        <div class="journey-choices" role="group" aria-label="Choose your Sports Academy journey">
+          <button type="button" data-journey="student">I’m a student finding my sport</button>
+          <button type="button" data-journey="athlete">I’m an athlete building my future</button>
+          <button type="button" data-journey="parent">I’m a parent supporting a dream</button>
+        </div>
+        <div id="journey-message" class="journey-message" aria-live="polite">
+          <p><strong>Your next step matters.</strong> Choose an option above to see how Sports Academy can support the journey.</p>
+        </div>
+      </section>
+
+      <section class="section callout">
+        <p class="eyebrow">A community with purpose</p>
+        <h2>Let’s build your future in sports—together.</h2>
+        <a class="button button--light" href="index.html#contact">Talk to the Academy</a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="current-year"></span> Sports Academy. All rights reserved.</p></footer>
+    <script src="assets/js/academy-config.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
