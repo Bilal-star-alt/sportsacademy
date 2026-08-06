@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculate Sports Academy coaching plan pricing." />
+    <title>Pricing | Sports Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Sports Academy home">SPORTS<span>ACADEMY</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+      <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+        <a href="index.html#programs">Programs</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="button button--small">Join Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="pricing-hero">
+        <p class="eyebrow">Simple, transparent pricing</p>
+        <h1>Build a plan that fits <em>your goals.</em></h1>
+        <p>Choose your coaching hours and plan length. Your savings and final amount update instantly.</p>
+      </section>
+
+      <section class="section pricing-layout">
+        <form id="pricing-calculator" class="pricing-calculator" novalidate>
+          <div class="pricing-control">
+            <label for="hours">Coaching hours</label>
+            <input id="hours" name="hours" type="number" inputmode="numeric" min="1" step="1" value="40" required />
+            <p>Training is priced at <strong id="hourly-rate">$20.00</strong> per hour.</p>
+            <p id="hours-error" class="input-error" aria-live="polite"></p>
+          </div>
+
+          <fieldset class="pricing-control">
+            <legend>Membership plan</legend>
+            <label class="plan-option"><input type="radio" name="plan" value="starter" checked /><span><strong>Starter</strong><small>0–60 days</small></span><b>5% off</b></label>
+            <label class="plan-option"><input type="radio" name="plan" value="growth" /><span><strong>Growth</strong><small>61–120 days</small></span><b>10% off</b></label>
+            <label class="plan-option"><input type="radio" name="plan" value="elite" /><span><strong>Elite</strong><small>121+ days</small></span><b>15% off</b></label>
+          </fieldset>
+
+          <label class="upfront-option">
+            <input id="pay-upfront" type="checkbox" />
+            <span><strong>Pay entire plan upfront</strong><small>Receive an additional 2% cashback after your membership discount.</small></span>
+          </label>
+        </form>
+
+        <aside class="pricing-summary" aria-live="polite">
+          <p class="eyebrow">Your investment</p>
+          <h2>Pricing summary</h2>
+          <dl>
+            <div><dt>Hours purchased</dt><dd id="summary-hours">40</dd></div>
+            <div><dt>Hourly rate</dt><dd id="summary-rate">$20.00</dd></div>
+            <div><dt>Base cost</dt><dd id="summary-base">$800.00</dd></div>
+            <div><dt>Membership discount</dt><dd id="summary-discount">5%</dd></div>
+            <div><dt>Money saved</dt><dd id="summary-savings">−$40.00</dd></div>
+            <div><dt>Discounted price</dt><dd id="summary-discounted">$760.00</dd></div>
+            <div id="cashback-row" hidden><dt>Upfront cashback</dt><dd id="summary-cashback">−$0.00</dd></div>
+            <div class="summary-total"><dt>Final amount due</dt><dd id="summary-final">$760.00</dd></div>
+          </dl>
+          <button id="checkout-button" class="button" type="button">Continue to checkout</button>
+          <p id="checkout-status" class="checkout-status" aria-live="polite"></p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="current-year"></span> Sports Academy. All rights reserved.</p></footer>
+    <script src="assets/js/academy-config.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pricing.js"></script>
+  </body>
+</html>
